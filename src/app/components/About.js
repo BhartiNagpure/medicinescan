@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import scannerimg from '../assests/mobilescan.png'
 
 const About = () => {
     return (
@@ -33,8 +32,8 @@ const About = () => {
                         <div className="relative">
                             <div className="absolute inset-0 bg-sky-600/10 rounded-lg transform rotate-3"></div>
                             <div className="relative bg-white p-6 rounded-lg shadow-xl transform transition-transform hover:-translate-y-2">
-                                <Image
-                                    src={scannerimg}
+                                <img
+                                    src='/mobilescan.png'
                                     alt="Medicine Scanner"
                                     className="w-full h-auto rounded-lg"
                                     priority
