@@ -1,7 +1,5 @@
 import { useState } from "react";
 import Image from "next/image";
-import bannerpng from "../assests/bannerpng.png";
-import bannerimg1 from '../assests/bannerimg1.png';
 import dynamic from "next/dynamic";
 
 const ScannerComponent = dynamic(() => import("./Scanner"), { ssr: false });
@@ -74,7 +72,7 @@ const Banner = () => {
                             <div className="relative group">
                                 <div className="w-64 h-64 bg-white/10 backdrop-blur-lg rounded-2xl border border-white/20 shadow-lg overflow-hidden">
                                     <Image
-                                        src={bannerimg1}
+                                        src='/bannerimg1.png'
                                         alt="QR Scanner"
                                         width={200}
                                         height={200}
@@ -87,8 +85,8 @@ const Banner = () => {
                             </div>
                             <div className="relative group mt-12">
                                 <div className="w-64 h-64 bg-white/10 backdrop-blur-lg rounded-2xl border border-white/20 shadow-lg overflow-hidden">
-                                    <Image
-                                        src= {bannerpng}
+                                    <img
+                                        src='/bannerpng.png'
                                         alt="Medicine Information"
                                         width={200}
                                         height={200}

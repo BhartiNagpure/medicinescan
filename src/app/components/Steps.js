@@ -1,7 +1,5 @@
 import Image from "next/image";
-import scanimg from '../assests/scan.png';
-import selectimg from '../assests/select.png';
-import talkimg from '../assests/talk.png';
+
 
 const Steps = () => {
     const step = [
@@ -9,19 +7,19 @@ const Steps = () => {
             title: "Scan",
             description:
                 "Scan your medicine based on QR code and availability. Add filters such as usage, side effects, and location.",
-            image: scanimg,
+            image:'/scan.png',
         },
         {
             title: "Select",
             description:
                 "With your search complete, select the expert profile that best fits your needs and arrange a time to talk.",
-            image: selectimg,
+            image: '/select.png',
         },
         {
             title: "Speak",
             description:
                 "Now it's time to speak with your chosen expert via video call and get the advice you need when you need it.",
-            image: talkimg,
+            image: '/talk.png',
         },
     ]
     return (
@@ -51,7 +49,7 @@ const Steps = () => {
                                 className="group relative bg-white p-6 rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-1"
                             >
                                 <div className="aspect-[4/3] overflow-hidden rounded-lg mb-6">
-                                    <Image
+                                    <img
                                         src={item.image}
                                         alt={item.title}
                                         width={250}
